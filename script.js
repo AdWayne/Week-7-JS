@@ -101,8 +101,8 @@ console.log(typeof value);   // string
 
 
 ///6
-let clientname = prompt("Имя: ");
-let clientage = prompt("Возраст: "); 
+let clientname = String(prompt("Имя: "));
+let clientage = String(prompt("Возраст: ")); 
 console.log("Имя:" + clientname)
 console.log("Возраст:" + clientage)
 
@@ -141,9 +141,9 @@ console.log(a === ten) //сравнил значение и тип данных 
 
 //6
 let X = 12;
-let y = 6;
+let y = 11;
 console.log((X/2 || X/3) && X % 6==0);
-console.log(y > 10 || y < 5);
+console.log(y > 10 && y < 5);
 
 
 
@@ -153,7 +153,7 @@ console.log(y > 10 || y < 5);
 
 //week 7.4
 //1
-let chilso = prompt("Число: ");
+let chilso = Number(prompt("Число: "));
 if (chilso > 10){
     console.log("Число больше 10")
 }
@@ -168,7 +168,7 @@ if(DeleteFile){
     console.log("Удаление отменено")
 }
 //3
-let vosrast = prompt("Ваш возраст: ")
+let vosrast = Number(prompt("Ваш возраст: "));
 if(vosrast < 18){
     console.log('Вы еще подросток')
 }else if(vosrast >=18 && vosrast <=30){
@@ -177,32 +177,32 @@ if(vosrast < 18){
     console.log('Вы взрослый')
 }
 //4
-let chislo2 = prompt("Число четное или нечетное: ");
+let chislo2 = Number(prompt("Число четное или нечетное: "));
 let testnum = (chislo2 % 2 ==0)?"Это четное число": "Нечетное число";
 console.log(testnum);
 //5
-let dayweek = prompt("день недели: ");
+let dayweek = Number(prompt("день недели: "));
 let day;
 switch(dayweek){
-    case "1":
+    case 1:
         day = "Понедельник";
         break;
-    case "2":
+    case 2:
         day = "Вторник";
         break;
-    case "3":
+    case 3:
         day = "Среда";
         break;
-    case "4":
+    case 4:
         day = "Четверг";
         break;
-    case "5":
+    case 5:
         day = "Пятница";
         break;
-    case "6":
+    case 6:
         day = "Суббота";
         break;
-    case "7":
+    case 7:
         day = "Воскресенье"
         break;
     default:
@@ -212,7 +212,7 @@ switch(dayweek){
 console.log(day)
 
 //Dop zadanie
-let month = prompt("времени года по введенному номеру месяца: ");
+let month = Number(prompt("времени года по введенному номеру месяца: "));
 switch(month){
     case 12:
     case 1:
