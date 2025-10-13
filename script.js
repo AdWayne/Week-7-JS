@@ -142,9 +142,8 @@ console.log(a === ten) //сравнил значение и тип данных 
 //6
 let X = 12;
 let y = 11;
-console.log((X/2 || X/3) && X % 6==0);
-console.log(y > 10 && y < 5);
-
+console.log((X % 2 === 0 || X % 3 === 0) && X % 6 !== 0); 
+console.log(!(y > 10 || y < 5));
 
 
 
@@ -249,3 +248,4 @@ const name = 'Azamat'; ////константу нельзя изменить из
 console.log(name)
 name = 'Shrek';
 console.log(name);
+
